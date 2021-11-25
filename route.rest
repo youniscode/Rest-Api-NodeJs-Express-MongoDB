@@ -2,15 +2,31 @@ GET http://localhost:3000/subscribers
 
 ###
 
-GET http://localhost:3000/subscribers/11
+GET http://localhost:3000/subscribers/619f637bd7f45137cf45befa
 
 ###
 
 POST http://localhost:3000/subscribers
+// To let the server know this going to be Json format
 Content-Type: application/json
 
 {
   "name": "Jonas Willaim",
   "subscribedToChannel": "GAMEPAUSE"
 }
+
+###
+
+DELETE http://localhost:3000/subscribers/619f637bd7f45137cf45befa
+
+###
+
+PATCH http://localhost:3000/subscribers/619f8b1d317d896248680718
+Content-Type: application/json
+
+{
+  "name": "Younis"
+}
+
+
 
